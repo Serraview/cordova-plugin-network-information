@@ -34,6 +34,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.PowerManager;
 
 import java.util.Locale;
 
@@ -86,6 +87,7 @@ public class NetworkManager extends CordovaPlugin {
 
     ConnectivityManager sockMan;
     BroadcastReceiver receiver;
+    BroadcastReceiver receiverIdleMode;
     private JSONObject lastInfo = null;
 
     /**
